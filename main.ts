@@ -156,6 +156,21 @@ guestsList.pop();
 guestsList.pop();
 console.log(guestsList);
 
+Q18 ----------
+
+let places_to_visit: string[] = ["Kyoto", "Rio de Janeiro", "Machu Picchu", "Santorini", "Maui"];
+console.log(`Original order: ${places_to_visit}`);
+console.log(`Alphabetical order:, ${[...places_to_visit].sort()}`);
+console.log(`Original order (unchanged): ${places_to_visit}`);
+console.log(`Reverse alphabetical order: ${[...places_to_visit].sort().reverse()}`);
+console.log(`Original order (unchanged): ${places_to_visit}`);
+places_to_visit.reverse();
+console.log(`Reversed order: ${places_to_visit}`);
+places_to_visit.reverse();
+console.log(`Original order: ${places_to_visit}`);
+places_to_visit.sort();
+console.log(`Sorted in alphabetical order: ${places_to_visit}`);
+
 Q19 ----------
 
 function invitationCard(arr: string[]): void {
@@ -611,5 +626,3 @@ function storeInformation(manufactor: string, modelName: string, color?: string)
 
 console.log("Honda", "Accord");
 console.log("Honda", "Accord", 1972);
-
-
