@@ -118,23 +118,18 @@
 // guestsList.pop();
 // console.log(guestsList);
 // Q18 ----------
-// const placeToVisit: string[] = ["UK", "China", "USA", "Pakistan"];
-// for (let i = 0; i<placeToVisit.length; i++) {
-//     console.log(placeToVisit[i]);
-// }
-// var used_names:string[]=[];
-// for (let i=0; i<placeToVisit.length; i++){0
-//     if (placeToVisit[i] in used_names){
-//     var lowest=placeToVisit[i]
-//     for (let j=0; j<placeToVisit.length; j++){
-//         if (placeToVisit[j]<lowest){
-//             lowest=placeToVisit[j]
-//         }
-//     }
-// }
-//     used_names.push(lowest)
-//     console.log(lowest)
-// }
+// let places_to_visit: string[] = ["Kyoto", "Rio de Janeiro", "Machu Picchu", "Santorini", "Maui"];
+// console.log(`Original order: ${places_to_visit}`);
+// console.log(`Alphabetical order:, ${[...places_to_visit].sort()}`);
+// console.log(`Original order (unchanged): ${places_to_visit}`);
+// console.log(`Reverse alphabetical order: ${[...places_to_visit].sort().reverse()}`);
+// console.log(`Original order (unchanged): ${places_to_visit}`);
+// places_to_visit.reverse();
+// console.log(`Reversed order: ${places_to_visit}`);
+// places_to_visit.reverse();
+// console.log(`Original order: ${places_to_visit}`);
+// places_to_visit.sort();
+// console.log(`Sorted in alphabetical order: ${places_to_visit}`);
 // Q19 ----------
 // function invitationCard(arr: string[]): void {
 //     for (let i = 0; i < arr.length; i++) {
@@ -478,15 +473,15 @@
 // makeSandwich(["Ham", "Cheese"]);
 // makeSandwich([]);
 // Q45 ---------
-function storeInformation(manufactor, modelName, color) {
-    var information = {
-        manufactor: manufactor,
-        modelName: modelName,
-    };
-    if (color !== undefined) {
-        information.color = color;
-    }
-    return information;
-}
-console.log("Honda", "Accord");
-console.log("Honda", "Accord", 1972);
+// function storeInformation(manufactor: string, modelName: string, color?: string): { manufactor: string, modelName: string, color?: string} {
+//     let information: { manufactor: string, modelName: string, color?: string } = {
+//                  manufactor: manufactor,
+//                  modelName: modelName,
+//     };
+//     if (color !== undefined) {
+//         information.color = color
+//     }
+//     return information
+// }
+// console.log("Honda", "Accord");
+// console.log("Honda", "Accord", 1972);
